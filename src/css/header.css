@@ -1,0 +1,182 @@
+header{
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+a{
+    text-decoration: none;
+
+
+}
+.title-marvel {
+    font-weight: bolder;
+    color: #020103;
+    letter-spacing: -6.7px;
+    font-size: 100px;
+    text-transform: uppercase;
+    padding: 0 16px;
+    background: #9b00f5;
+  }
+  
+  
+  
+  .title-studios {
+    font-size: 100px;
+
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    color: #9b00f5;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    padding: 0 16px;
+    border-color: #9b00f5;
+    border-top: 8px solid;
+    border-bottom: 8px solid;
+    line-height: 1;
+  }
+
+.queryButton{
+    color: white;
+    font-size: 30px;
+
+    background-image:linear-gradient(to top, #7451EB, #3d3ad8);
+
+    margin: 10px;
+    width: 160px;
+    height: 60px;
+    border-radius: 5px;
+    border-style: none; 
+    transition: 0.8s;
+
+}
+.SmallqueryButton{
+    height: 20px;
+    border-radius: 5px;
+    border-style: none; 
+
+    color: white;
+    font-size: 10px;
+    background-image:linear-gradient(to top, #7451EB, #3d3ad8);
+    margin: 10px;
+
+}
+
+
+.queryButton:hover{
+
+    height: 70px;
+    width: 170px;
+
+
+
+
+}
+
+.queryButton:active{
+
+    height: 140px;
+    width: 240px;
+
+
+
+
+}
+
+
+
+.profilBorder{
+    width: 300px;
+    height: 210px;
+    margin: 50px;    
+    /* margin-right: 20px; */
+    border-radius: 10px;
+    background-image:linear-gradient(to right, #2975FF, #7350EC);
+
+    /* border: white 2px solid  */
+    
+}
+h5{
+   
+}
+.personalityButton{
+    color: white;
+    font-size: 10px;
+    background-color:#7451EB;
+
+
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none; 
+    transition: 0.8s;
+    border: 1px white solid;
+
+
+
+}
+.transaction{
+    background-color: red;
+    color: white;
+    font-size: 15px;
+    transition: 0.8s;
+    border: black 2px solid;
+
+
+}
+
+.buybutton{
+    background-image:linear-gradient(to bottom, yellow, #DBB70C);
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    margin-bottom: 6px;
+
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+
+}
+
+.backcardmainbutton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.transaction:hover{
+    font-size: 20px;
+
+
+}
+.transaction:active{
+    font-size: 22px;
+
+
+}
+.personalityButton:hover {
+    width: 90px;
+    height: 30px;
+
+
+
+}
+.personalityButton:active{
+    width: 120px;
+    
+
+
+
+}
+
+
+.pay{
+  display: inline;
+    
+
+}

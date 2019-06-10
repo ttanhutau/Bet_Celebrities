@@ -1,0 +1,65 @@
+.navbar__ {
+  background: #373b44;
+  background: -webkit-linear-gradient(to right, #373b44, #4286f4); 
+  background: linear-gradient(to right, #FFFF, #6D7CF2);
+  min-height: 50%;
+  
+}
+
+.commentary_slidingpane {
+  border-top: 1px solid gray;
+}
+ /* .commentary {
+  border-top: 1px solid whitesmoke;
+ } */
+
+ .menu_slidingpane {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+ .instagram__logo {
+   display: flex;
+   margin: 3%;
+ }
+
+ .biography__logo {
+   display: flex;
+   margin: 3%;
+ }
+
+ .actu__logo {
+  display: flex;
+  margin: 3%;
+}
+
+.like__ {
+  flex-direction: row;
+  margin-left: 1%;
+}
+
+.calendar__ {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonvalidate__ {
+  display: flex;
+  
+}
+
+.color.color {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 10px 10px 5px;
+  border-bottom: 1px solid #ebebeb!important;
+  border: none;
+  box-sizing: border-box;
+  margin-top: 22px;
+  box-shadow: none;
+  font-family: Open Sans,sans-serif;
+}

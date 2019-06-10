@@ -1,0 +1,98 @@
+
+
+.gridCard{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+
+
+
+}
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+
+
+}
+.card{
+    background-color: transparent;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    height: 300px;
+    width: 300px;
+    margin: 40px;
+
+}
+
+.innerCard{
+    margin: 40px;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 1.0s;
+    transform-style: preserve-3d;
+
+    
+    /* background-repeat: no-repeat; */
+    
+
+    /* box-shadow: 2px 4px gray ; */
+}
+
+.frontCard{
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+
+    
+}
+
+.card:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+
+  .frontCard, .backCard {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+
+  }
+
+ 
+
+  .backCard {
+    /* background-color: dodgerblue; */
+    background-image:linear-gradient(to right, #2975FF, #50c0f4);
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+h2{
+width: 100px;
+margin-left: 10px;
+margin-top: 5px;
+}
+
+.ownerInfo{
+width: 90%;
+margin-left: 5%;
+display: flex;
+justify-content: space-between;
+margin-top: 140px;
+}
+
+
+h3{
+}
+
+h4{
+    color : #dbb80a;
+
+}
+
