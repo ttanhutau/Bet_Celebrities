@@ -113,12 +113,12 @@ class Profil extends Component{
             <div class = "profilBorder">
                 <h5>{ this.state.name == "" ? "User loading ..." : this.state.name}</h5>
                 <h4>{Math.floor(this.state.cash == 0 ? "0" : this.state.cash)} Cash </h4>
-                <button class="personalityButton" onMouseUp={this.props.returnPersonelDatabase}>Personel</button>
+                <button class="button_log" onMouseUp={this.props.returnPersonelDatabase}>Personel</button>
                 <div class="pay">
-                    <button class="transaction"> buy cash </button>
-                    <button class="transaction"> sell cash </button>
+                    <button class="button_log"> buy cash </button>
+                    <button class="button_log"> sell cash </button>
                 </div>
-                <button class="transaction" onClick={this.signOut}>Log out</button>
+                <button class="button_log" onClick={this.signOut}>Log out</button>
             </div>
 
 

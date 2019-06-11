@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import firebase from '../firebase.js';
 import { Line } from 'react-chartjs-2';
 import SellCard from './SellCard.js';
+import ActuPeople from '../component/ActuPeople';
+
 
 
 
@@ -191,10 +193,12 @@ class Backcard extends Component {
                                 }}
                                 data={this.state.data} />
                         </div>
-                        <p>American Actor</p>
                         <div class="backcardmainbutton">
-                            <button class="buybutton" onClick={this.changePage}>Buy</button>
-                            <button class="buybutton" ><a href={this.state.actu} target="_blank" >Actu</a></button>
+                        <button class="buybutton" onClick={this.changePage}> <strong>BUY </strong> </button>                           
+                            <ActuPeople class="actubutton"  
+                            name={this.props.name} title={this.props.name} value={this.props.price} 
+                            amount={this.props.amount}  user={this.props.user} price={this.state.price} legendPosition="bottom"
+                            />
                         </div>
 
                     </div>

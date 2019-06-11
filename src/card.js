@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import firebase from './firebase.js';
 import './css/card.css'
+import Modal from 'react-modal';
 import BackCard from './backcard/backCard.js'
 import { throws } from 'assert';
 
@@ -31,6 +32,10 @@ class Card extends Component {
         )
       }
 
+      componentDidMount() {
+        Modal.setAppElement(this.el);
+    }
+
     render() {
         return (
             <div class="card">
@@ -46,7 +51,7 @@ class Card extends Component {
                             </h4>
                         </div>
                     </div>
-                    <BackCard bought={this.props.bought} funcall={this.props.funcall} actu={this.state.actu} postId={this.state.postId} userid={this.state.userid} price={this.state.price} user={this.state.user} amount={this.state.amount}></BackCard>
+                    <BackCard bought={this.props.bought} name={this.state.name} funcall={this.props.funcall} actu={this.state.actu} postId={this.state.postId} userid={this.state.userid} price={this.state.price} user={this.state.user} amount={this.state.amount}></BackCard>
                 </div>
             </div>
 

@@ -165,11 +165,11 @@ class Loginprofil extends Component {
 
                     <div class="profilBorder">
 
-                        <label for="mail">Enter your mail</label><input name="mail" type="mail" onChange={this.changeMail} class="loginfield"></input>
-                        <label for="password">Enter your password</label><input name="password" onChange={this.changePassword} type="password" class="loginfield"></input>
-                        <button class="button_login" onClick={this.signInUser}>Sign up</button>
+                        <label class="log" for="mail">Enter your mail</label><input name="mail" type="mail" onChange={this.changeMail} class="loginfield"></input>
+                        <label class="log" for="password">Enter your password</label><input name="password" onChange={this.changePassword} type="password" class="loginfield"></input>
+                        <button class="button_log" onClick={this.signInUser}>Sign up</button>
 
-                        <button class="button_login" onClick={this.gotologin} > goback </button>
+                        <button class="button_log" onClick={this.gotologin} > goback </button>
                     </div>
 
                 );

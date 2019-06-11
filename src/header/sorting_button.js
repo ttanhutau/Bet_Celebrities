@@ -18,7 +18,7 @@ class SortingButton extends Component {
                     <button class="queryButton" >Trending</button>
                     <button class="queryButton" onMouseUp={this.props.returnlowDataBase} >Most Less</button>
                 </div>
-                <div>
+                <div id="cat">
                     <button class="SmallqueryButton" onMouseUp={() => this.props.returnDataBaseJob("Athlete")}>Athlete</button>
                     <button class="SmallqueryButton" onMouseUp={() => this.props.returnDataBaseJob("Politician")}>Politician</button>
                     <button class="SmallqueryButton" onMouseUp={() => this.props.returnDataBaseJob("Actor")}>Actor</button>

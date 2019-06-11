@@ -18,11 +18,11 @@ a{
     text-transform: uppercase;
     padding: 0 16px;
     background: #9b00f5;
-}
+  }
   
   
   
-.title-studios {
+  .title-studios {
     font-size: 100px;
 
     position: relative;
@@ -36,39 +36,55 @@ a{
     border-top: 8px solid;
     border-bottom: 8px solid;
     line-height: 1;
-}
+  }
 
 .queryButton{
     color: white;
     font-size: 30px;
+
     background-image:linear-gradient(to top, #7451EB, #3d3ad8);
+
     margin: 10px;
     width: 160px;
     height: 60px;
     border-radius: 5px;
     border-style: none; 
     transition: 0.8s;
-}
 
+}
 .SmallqueryButton{
     height: 20px;
     border-radius: 5px;
     border-style: none; 
+
     color: white;
-    font-size: 20px;
+    font-size: 10px;
+    background-image:linear-gradient(to top, #7451EB, #3d3ad8);
     margin: 10px;
-    background-color: transparent;
-    transition: 0.8s;
+
 }
 
 
 .queryButton:hover{
-    color: #9b00f5;
+
+    height: 70px;
+    width: 170px;
+
+
+
+
 }
 
-.SmallqueryButton:hover{
-    color: #9b00f5;
+.queryButton:active{
+
+    height: 140px;
+    width: 240px;
+
+
+
+
 }
+
 
 
 .profilBorder{
@@ -82,8 +98,26 @@ a{
     /* border: white 2px solid  */
     
 }
+h5{
+   
+}
+.personalityButton{
+    color: white;
+    font-size: 10px;
+    background-color:#7451EB;
 
 
+    margin: 10px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: none; 
+    transition: 0.8s;
+    border: 1px white solid;
+
+
+
+}
 .transaction{
     background-color: red;
     color: white;
@@ -94,7 +128,18 @@ a{
 
 }
 
+.buybutton{
+    background-image:linear-gradient(to bottom, yellow, #DBB70C);
+    width: 80%;
+    height: 30px;
+    margin-left: 10%;
+    margin-bottom: 6px;
 
+    margin-right: 20px;
+    border-radius: 5px;
+    border: none;
+
+}
 
 .backcardmainbutton{
     display: flex;
@@ -114,61 +159,24 @@ a{
 
 
 }
+.personalityButton:hover {
+    width: 90px;
+    height: 30px;
+
+
+
+}
+.personalityButton:active{
+    width: 120px;
+    
+
+
+
+}
+
 
 .pay{
-    display: inline;
-}
+  display: inline;
+    
 
-.button_login{
-    background-color: transparent;
-    border-color: transparent;
-    font-size: 60px;
-    margin: 10px;
-    font-weight: bolder;
-    color: white;
-}
-
-.log{
-    color: white;
-    margin: 10px;
-}
-
-.logi{
-    color: white;
-    margin: 5px;
-
-}
-
-.button_log{
-    font-size: 15px;
-    width: 90px;
-    border-radius: 10px;
-    padding: 5px;
-    margin: 10px;
-    font-weight: bold;
-    transition: 1s;
-}
-
-.button_log:hover{
-    color: #9b00f5;
-}
-
-
-
-.profilBorder2{
-    width: 300px;
-    height: 330px;
-    margin: 50px;    
-    border-radius: 10px;
-    background-image:linear-gradient(to right, #2975FF, #7350EC);   
-}
-
-#cat{
-    background-image:linear-gradient(to top, #7451EB, #3d3ad8);
-    border-radius: 10px;
-}
-
-.fb__ {
-    display: flex;
-    border: 1px solid white
 }

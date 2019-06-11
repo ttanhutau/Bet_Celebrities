@@ -1,3 +1,21 @@
+/* @keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+} */
+
+
 .App {
   text-align: center;
 }
@@ -16,11 +34,37 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  /* color: black; */
+}
+
+.card {
   color: white;
 }
 
-.cashprice{
+.buybutton{
+  background-color: transparent;
+  width: 80%;
+  height: 35px;
+  margin-left: 10%;
+  margin-top: 2%;
+  border: 3px solid white;
+  color: white;  
+  font-size: 15px;
+  margin-right: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  margin-right: 5%;
+}
 
+.buybutton:hover {
+  background: #EF3B36;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFFFF,  	#c7c5c5);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFFFF, 	#c7c5c5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+.cashprice{
   background-color: #282c34;
   width: 100px;
   border-radius: 4px;
@@ -30,12 +74,75 @@ body {
 .App-link {
   color: #61dafb;
 }
+.inputcom_slidingpane {
+  display: flex;
+  border: 1px solid black;
+  margin-top: 5px;
+  width: 100%;
+  height: 10%;
+}
 
-@keyframes App-logo-spin {
+input[type=text], select {
+  /* display: flex;
+  flex-direction: row; */
+  justify-content: center;
+  padding: 20px 2Opx;
+  border-bottom: 0.5 solid black;
+
+
+}
+.selfie_img {
+  border-radius: 100px;
+  margin-top: 15px;
+
+}
+
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+} */
+
+
+/* CSS VALENTIN SLIDEBAR COMMENTARY */
+
+.commentary_slidingpane {
+  border-top: 1px solid gray;
 }
+ /* .commentary {
+  border-top: 1px solid whitesmoke;
+ } */
+
+ .menu_slidingpane {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ }
+
+ .instagram__logo {
+   display: flex;
+   margin: 3%;
+ }
+
+ .biography__logo {
+   display: flex;
+   margin: 3%;
+ }
+
+ .actu__logo {
+  display: flex;
+  margin: 3%;
+}
+
+.like__ {
+  flex-direction: row;
+  margin-left: 1%;
+}
+
+.commentary__pstrong {
+  font-size: 15px;
+}
+/* END */

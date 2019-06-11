@@ -5,13 +5,18 @@
     height: auto;
     justify-content: center;
     flex-direction: column;
+
+
+
 }
+
 
 .row{
     display: flex;
     flex-direction: row;
-}
 
+
+}
 .card{
     background-color: transparent;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
@@ -69,7 +74,7 @@
 
 
 h2{
-width: 50%;
+width: 100px;
 margin-left: 10px;
 margin-top: 5px;
 }
@@ -88,11 +93,6 @@ h3{
 
 h4{
     color : #dbb80a;
-    margin: 15px;
 
-}
-h5{
-    color: white;
-    margin: 15px;
 }
 

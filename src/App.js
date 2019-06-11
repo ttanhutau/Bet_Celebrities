@@ -7,7 +7,6 @@ import SortingButton from './header/sorting_button';
 import Card from './card';
 import Profil from './header/profil'
 import Google from "./header/loginprofil";
-import { add } from './Return-db';
 
 
 
@@ -42,7 +41,7 @@ class App extends Component {
       if (user) {
         // User is signed in.
         this.setState({ user_id : user.uid.toString() });
-        // ...
+
       } else {
         this.setState({ user_id :"" });
         // User is signed out.
