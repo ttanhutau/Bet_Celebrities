@@ -47,7 +47,7 @@ class Card extends Component {
                                 {this.state.job}
                             </h3>
                             <h4 class="cashprice">
-                                {this.state.price}
+                                {this.state.price} §
                             </h4>
                         </div>
                     </div>

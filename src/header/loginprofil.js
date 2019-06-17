@@ -75,8 +75,7 @@ class Loginprofil extends Component {
 
         var mail = this.state.mail;
         var password = this.state.password;
-
-
+        console.log(this.validateEmail + this.state.password2);
         if (this.validateEmail(mail) && password.length > 6 && password == this.state.password2) {
 
 
@@ -90,7 +89,7 @@ class Loginprofil extends Component {
            
                   firebase.firestore().collection("users").doc(user.uid).set({
                     name: this.state.username,
-                    cash: 0,
+                    cash: 40,
 
                 })
                 
@@ -165,11 +164,12 @@ class Loginprofil extends Component {
 
                     <div class="profilBorder">
 
-                        <label class="log" for="mail">Enter your mail</label><input name="mail" type="mail" onChange={this.changeMail} class="loginfield"></input>
-                        <label class="log" for="password">Enter your password</label><input name="password" onChange={this.changePassword} type="password" class="loginfield"></input>
-                        <button class="button_log" onClick={this.signInUser}>Sign up</button>
-
-                        <button class="button_log" onClick={this.gotologin} > goback </button>
+                        <div class="log"><label for="mail">Enter your email adress</label><input name="mail" type="mail" onChange={this.changeMail} class="loginfield"></input></div>
+                        <div class="log"><label for="password">Enter your password</label><input name="password" onChange={this.changePassword} type="password" class="loginfield"></input></div>
+                        <div>
+                        <button class="button_log" onClick={this.signInUser}>Login</button>
+                        <button class="button_log" onClick={this.gotologin} > Go back </button>
+                        </div>
                     </div>
 
                 );
@@ -182,18 +182,18 @@ class Loginprofil extends Component {
 
 
 
-                    <div class="profilBorder">
-                        <form onSubmit={this.CreateUser}>
-                            <label for="mail">Enter your mail</label><input name="mail" type="mail" onChange={this.changeMail} class="loginfield"></input>
-                            <label for="password">Enter your password</label><input name="password" onChange={this.changePassword} type="password" class="loginfield"></input>
-                            <label for="c_password">Reinsert your password</label><input name="c_password" onChange={this.changePassword2} type="password" class="loginfield"></input>
-                            <label for="username">write your username</label><input name="username" type="username" onChange={this.changeUsername} class="loginfield"></input>
-                            <input type="submit" class="button_login" value="create a user" />
-                        </form>
-                        <button class="button_login" onClick={this.gotologin} > goback </button>
+                    <div class="profilBorder2">
+                    <form onSubmit={this.CreateUser}>
+                        <div class="logi"><label for="mail">Enter your email adress</label><input name="mail" type="mail" onChange={this.changeMail} class="loginfield"></input></div>
+                        <div class="logi"><label for="password">Enter your password</label><input name="password" onChange={this.changePassword} type="password" class="loginfield"></input></div>
+                        <div class="logi"><label for="c_password">Reinsert your password</label><input name="c_password" onChange={this.changePassword2} type="password" class="loginfield"></input></div>
+                        <div class="logi"><label for="username">Write your username</label><input name="username" type="username" onChange={this.changeUsername} class="loginfield"></input></div>
+                        <div><input type="submit" class="button_log" value="Sign In" />
+                        <button class="button_log" onClick={this.gotologin} > Go back </button></div>
+                    </form>
 
 
-                    </div>
+                </div>
 
                 );
 

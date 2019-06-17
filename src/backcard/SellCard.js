@@ -51,13 +51,14 @@ class SellCard extends Component {
 
         return (
             <div class="backCard">
-                <div>Vous pouvez retirez :  {this.state.newcash} </div>
-                <div>La cote inital était de :  {this.state.cote} </div>
+                <div>you can withdraw :  <div class="cashcote"> {Math.floor(this.state.newcash)} §</div></div>
+                <div>
 
-                <div>vous avez inserer initalement : {this.state.cashinit} </div>
-                <div>Le prix est actuellement de : {this.state.cote_now} </div>
+                <div >your initial investment was : {this.state.cashinit} §</div>
 
-                <button class="buybutton" onClick={this.concludeTransaction}>sell</button>
+                </div>
+
+                <button id="botbut" class="buybutton" onClick={this.concludeTransaction}>sell</button>
             </div>
 
         );
@@ -93,7 +94,7 @@ class SellCard extends Component {
 
 
         //delet the people document inside the user collection
-        theDb.collection("users").doc(userId).collection("people").doc(thePostId).delete().then(function () {
+        theDb.collection("users").doc("dLW6SCRRGmTXXMg97IqAdT304Vy2").collection("people").doc("pUmxtYtobAxZUPxf1QDz").delete().then(function () {
         }).then(function () {
             console.log("document deleted successfully")
         });
@@ -145,7 +146,7 @@ class SellCard extends Component {
 
         //delete the document owned by the user
         //
-        this.props.funcall();
+        setTimeout(() => {                 this.props.funcall();                }, 2000);
     }
 
 

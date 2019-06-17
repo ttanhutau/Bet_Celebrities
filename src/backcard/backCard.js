@@ -160,7 +160,8 @@ class Backcard extends Component {
 
             }).then(() => {
                 console.log("Transaction successfully committed!");
-                this.props.funcall();
+                setTimeout(() => {                 this.props.funcall();                }, 2000);
+
              
 
             }).catch(function (error) {
@@ -194,7 +195,7 @@ class Backcard extends Component {
                                 data={this.state.data} />
                         </div>
                         <div class="backcardmainbutton">
-                        <button class="buybutton" onClick={this.changePage}> <strong>BUY </strong> </button>                           
+                        <button class="buybutton" onClick={this.changePage}> <strong> Transaction </strong> </button>                           
                             <ActuPeople class="actubutton"  
                             name={this.props.name} title={this.props.name} value={this.props.price} 
                             amount={this.props.amount}  user={this.props.user} price={this.state.price} legendPosition="bottom"
@@ -208,8 +209,8 @@ class Backcard extends Component {
             case "amount":
                 return (
                     <div class="backCard">
-                        <p>Le prochaine personne devra payer</p>
-                        <input type="text" onChange={this.textSelectedHandler} placeholder="entrez un montant"></input>
+                        <p>Enter the amount of cash you want to invest</p>
+                        <input type="text" onChange={this.textSelectedHandler} placeholder="entrez un montant"></input> §
                         <button class="buybutton" onClick={this.concludeTransaction}>buy</button>
                     </div>
 

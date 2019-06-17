@@ -66,9 +66,19 @@ body {
 
 .cashprice{
   background-color: #282c34;
-  width: 100px;
+  width: 120px;
   border-radius: 4px;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
+  
+}
+
+.cashcote{
+  background-color: #282c34;
+  width: 80%;
+  margin-left: 10%;
+
+
+
 }
 
 .App-link {
